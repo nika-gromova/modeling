@@ -33,7 +33,8 @@ vector<vector<double>> Calculator::calculate(const double deltat, const bool RK2
 
         cur_Rp = calc_Rp(cur_I);
         vector<double> tmp = method(i, cur_I, cur_Uc,  deltat,
-                                    [cur_Rp, this](const double z, const vector<double> args){return (args[1] - (data.Rk + cur_Rp) * args[0]) / data.Lk;},
+                                    [cur_Rp, this](const double z, const vector<double> args){return (args[1] - (data.Rk + cur_Rp)\
+                    * args[0]) / data.Lk;},
                                     [this](const double z, const vector<double> args){return (- args[0]) / data.Ck;});
         cur_I = tmp[0];
         cur_Uc = tmp[1];

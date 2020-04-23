@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1001</width>
-    <height>735</height>
+    <width>1645</width>
+    <height>815</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,149 @@
      <rect>
       <x>10</x>
       <y>9</y>
-      <width>641</width>
-      <height>701</height>
+      <width>681</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1390</x>
+      <y>200</y>
+      <width>201</width>
+      <height>311</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Параметры</string>
+    </property>
+    <widget class="QPushButton" name="calculate_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вычислить</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>181</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Rk:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Lk:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Ck:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>I0:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Uc0:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string> Δt:</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="Rk_edit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Lk_edit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Ck_edit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="I0_edit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="Uc0_edit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="dt_edit"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QChartView" name="chart_tR" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>681</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QChartView" name="chart_tIR" native="true">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>410</y>
+      <width>681</width>
+      <height>401</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QChartView" name="chart_tU" native="true">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>10</y>
+      <width>681</width>
+      <height>401</height>
      </rect>
     </property>
    </widget>

@@ -10,7 +10,7 @@
 #define RESISTANCE 3
 #define CURRES 4
 
-const double PULSE_TIME = 0.01;
+const double PULSE_TIME = 0.03;
 
 
 class Calculator
@@ -24,7 +24,7 @@ public:
     void set_Uc0(const double Uc0) { data.Uc0 = Uc0; }
     void set_Ck(const double Ck) { data.Ck = Ck; }
     void set_Lk(const double Lk) { data.Lk = Lk; }
-    void set_Rn(const double Rk) { data.Rk = Rk; }
+    void set_Rk(const double Rk) { data.Rk = Rk; }
 
 private:
     Data data;
